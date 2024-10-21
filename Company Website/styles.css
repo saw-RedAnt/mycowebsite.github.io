@@ -1,0 +1,144 @@
+html {
+    font-size: 16px;
+}
+/*header*/
+.header {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #A8E6CF;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    margin-top: 0px;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo {
+    color: #333333;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.nav .nav-links{
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin: 2rem;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #2F776C;
+}
+
+.nav-links a:active {
+    font-size: 1.3rem;
+}
+
+
+/*Banner*/
+.banner {
+    display: flex;
+    height: 43.75rem;
+    width: 100%;
+    background-image: url(/images/premium_photo-1661774141753-b8330376f951.avif);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission {
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3.125rem;
+    opacity: 0.7;
+}
+
+.mission h2 {
+    font-size: 2rem;
+}
+
+.mission p {
+    font-size: 1.25rem;
+}
+
+/*Services*/
+.services {
+    text-align: center;
+    margin-top: 4rem;
+}
+.cards-container {
+    display: flex;
+    margin: 1.25rem;
+    text-align: center;
+}
+
+.cards {
+    margin: 0.625rem;
+    background-color: #A8E6CF;
+    padding: 0.625rem;
+    box-shadow: #333333;
+}
+
+.cards-container .cards img{
+    width: 100%;
+}
+
+/*Team Members*/
+.our-team {
+    text-align: center;
+    margin-top: 4rem;
+}
+.team-container {
+    display: flex;
+    margin: 1.25rem 0;
+    text-align: center;
+    background-color: #D8C4B6;
+}
+
+.team {
+    margin: 0.625rem;
+    padding: 0.625rem;
+    box-shadow: #333333;
+}
+
+.team-container .team img{
+    width: 100%;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A8E6CF;
+    height: 6.25rem;
+}
+
+@media only screen and (max-width:768px) {
+    .header {
+        text-align: center;
+    }
+    .nav {
+        display: none;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        margin: 1.25rem;
+        text-align: center;
+    }
+}
